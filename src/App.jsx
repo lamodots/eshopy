@@ -56,14 +56,7 @@ const App = () => {
 				<Route path='/checkout' element={<Checkout />} />
 				<Route path='/checkout-success' element={<CheckoutSuccess />} />
 				{/* ADMIN ROUTES */}
-				<Route
-					path='/admin/*'
-					element={
-						<AdminRoute>
-							<Admin />
-						</AdminRoute>
-					}
-				/>
+				<Route path='/admin/*' element={<Admin />} />
 
 				{/* 404 routes */}
 				<Route path='/*' element={<NotFound />} />
